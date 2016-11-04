@@ -1,6 +1,6 @@
 {
   "name": "@mean-expert/model",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FireLoop Model Decorator",
   "main": "index.js",
   "scripts": {
