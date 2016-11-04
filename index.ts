@@ -15,7 +15,7 @@ export function Model(arg: { hooks: {}, remotes: {} }) {
             target = Object.assign(target, arg);
             console.log(target);
             new ModelRegister(target, reference);
-            return new target(reference)
+            return new target(reference.app)
         }
         return <any>ff;
     }

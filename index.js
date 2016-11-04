@@ -6,7 +6,7 @@ function Model(arg) {
             target = Object.assign(target, arg);
             console.log(target);
             new index_1.ModelRegister(target, reference);
-            return new target(reference);
+            return new target(reference.app);
         }
         return ff;
     }
