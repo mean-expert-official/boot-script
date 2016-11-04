@@ -1,0 +1,25 @@
+{
+  "name": "@mean-expert/model",
+  "version": "1.0.0",
+  "description": "FireLoop Model Decorator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mean-expert-official/model.git"
+  },
+  "keywords": [
+    "FireLoop"
+  ],
+  "author": "Jonathan Casarrubias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mean-expert-official/model/issues"
+  },
+  "homepage": "https://github.com/mean-expert-official/model#readme",
+  "dependencies":{
+    "@mean-expert/model-register": "1.0.4"
+  }
+}
