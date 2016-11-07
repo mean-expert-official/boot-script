@@ -1,4 +1,5 @@
 declare var Object: any;
+declare var module: any;
 import { ModelRegister } from '@mean-expert/model-register/index';
 /**
  * @author Jonathan Casarrubias
@@ -7,7 +8,7 @@ import { ModelRegister } from '@mean-expert/model-register/index';
  * @description
  * This decorator will register fireloop models
  **/
-export default function Model(arg: { hooks: {}, remotes: {} }) {
+module.exports = function Model(arg: { hooks: {}, remotes: {} }) {
     function f(target: any)
     {
         function ff(reference: any)
