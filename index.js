@@ -11,5 +11,6 @@ function Model(arg) {
     }
     return f;
 }
-exports.Model = Model;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Model;
 //# sourceMappingURL=index.js.map
