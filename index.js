@@ -1,6 +1,6 @@
 "use strict";
 var index_1 = require('@mean-expert/model-register/index');
-module.exports = function Model(arg) {
+function Model(arg) {
     function f(target) {
         function ff(reference) {
             target = Object.assign(target, arg);
@@ -10,5 +10,6 @@ module.exports = function Model(arg) {
         return ff;
     }
     return f;
-};
+}
+exports.Model = Model;
 //# sourceMappingURL=index.js.map

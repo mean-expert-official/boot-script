@@ -8,7 +8,7 @@ import { ModelRegister } from '@mean-expert/model-register/index';
  * @description
  * This decorator will register fireloop models
  **/
-module.exports = function Model(arg: { hooks: {}, remotes: {} }) {
+export function Model(arg: { hooks: {}, remotes: {} }) {
     function f(target: any)
     {
         function ff(reference: any)
