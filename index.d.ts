@@ -1,1 +1,1 @@
-export function Model(arg: { hooks: {}, remotes: {} }): any;
+export function Model(arg: { hooks?: {}, remotes?: {} }): any;

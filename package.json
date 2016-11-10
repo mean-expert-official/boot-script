@@ -1,6 +1,6 @@
 {
   "name": "@mean-expert/model",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "FireLoop Model Decorator",
   "main": "index.js",
   "types": "index.d.ts",
@@ -26,7 +26,7 @@
     "url": "https://github.com/mean-expert-official/model/issues"
   },
   "homepage": "https://github.com/mean-expert-official/model#readme",
-  "dependencies":{
-    "@mean-expert/model-register": "1.0.4"
+  "dependencies": {
+    "@mean-expert/model-register": "1.0.5"
   }
 }
