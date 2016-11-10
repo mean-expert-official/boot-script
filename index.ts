@@ -14,6 +14,9 @@ export function Model(arg: { hooks?: {}, remotes?: {} }) {
         function ff(reference: any)
         {
             let instance: any = new target(reference);
+            if (!arg ||  Object.keys(arg).length === 0) {
+                return instance;
+            }
             instance = Object.assign(instance, arg);
             new ModelRegister(instance, reference);
             return instance;
