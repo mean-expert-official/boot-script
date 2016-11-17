@@ -1,27 +1,19 @@
-declare var Object: any;
-declare var module: any;
-import { ModelRegister } from '@mean-expert/model-register/index';
 /**
  * @author Jonathan Casarrubias
- * @module Model Decorator
+ * @module BootScript Decorator
  * @license MIT
  * @description
- * This decorator will register fireloop models
+ * This decorator will return boot script instances
+ * This avoids the need of creating static bootscripts
  **/
-export function Model(arg: { hooks?: {}, remotes?: {} }) {
+export function BootScript() {
     function f(target: any)
     {
-        function ff(reference: any)
+        function BootScriptInstance(reference: any)
         {
-            let instance: any = new target(reference);
-            if (!arg ||  Object.keys(arg).length === 0) {
-                return instance;
-            }
-            instance = Object.assign(instance, arg);
-            new ModelRegister(instance, reference);
-            return instance;
+            return new target(reference);
         }
-        return <any>ff;
+        return <any>BootScriptInstance;
     }
     return f
 }

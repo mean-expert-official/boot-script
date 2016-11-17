@@ -1,7 +1,7 @@
 {
-  "name": "@mean-expert/model",
-  "version": "1.0.9",
-  "description": "FireLoop Model Decorator",
+  "name": "@mean-expert/boot-script",
+  "version": "1.0.0",
+  "description": "FireLoop BootScript Decorator",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mean-expert-official/model.git"
+    "url": "git+https://github.com/mean-expert-official/boot-script.git"
   },
   "keywords": [
     "FireLoop"
@@ -23,10 +23,9 @@
   "author": "Jonathan Casarrubias",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mean-expert-official/model/issues"
+    "url": "https://github.com/mean-expert-official/boot-script/issues"
   },
-  "homepage": "https://github.com/mean-expert-official/model#readme",
-  "dependencies": {
-    "@mean-expert/model-register": "1.0.5"
-  }
+  "homepage": "https://github.com/mean-expert-official/boot-script#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
