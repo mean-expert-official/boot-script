@@ -1,7 +1,7 @@
 {
-  "name": "@mean-expert/boot-script",
+  "name": "@mean-expert/inject",
   "version": "1.0.0",
-  "description": "FireLoop BootScript Decorator",
+  "description": "FireLoop Inject Decorator",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -22,6 +22,7 @@
   ],
   "author": "Jonathan Casarrubias",
   "license": "MIT",
+  
   "bugs": {
     "url": "https://github.com/mean-expert-official/boot-script/issues"
   },

@@ -1,12 +1,19 @@
 "use strict";
-function BootScript() {
+/**
+ * @author Andres Jimenez Fork from @mean-expert/boot-script by Jonathan Casarrubias
+ * @module Inject Decorator
+ * @license MIT
+ * @description
+ * This decorator will return singleton instances
+ * This avoids the need of creating static Injects
+ **/
+function Inject() {
     function f(target) {
-        function BootScriptInstance(reference) {
+        function InjectInstance(reference) {
             return new target(reference);
         }
-        return BootScriptInstance;
+        return InjectInstance;
     }
     return f;
 }
-exports.BootScript = BootScript;
-//# sourceMappingURL=index.js.map
+exports.Inject = Inject;
