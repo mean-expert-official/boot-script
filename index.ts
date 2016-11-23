@@ -1,19 +1,19 @@
 /**
- * @author Jonathan Casarrubias
- * @module BootScript Decorator
+ * @author Andres Jimenez Fork from @mean-expert/boot-script by Jonathan Casarrubias
+ * @module Inject Decorator
  * @license MIT
  * @description
- * This decorator will return boot script instances
- * This avoids the need of creating static bootscripts
+ * This decorator will return singleton instances
+ * This avoids the need of creating static Injects
  **/
-export function BootScript() {
+export function Inject() {
     function f(target: any)
     {
-        function BootScriptInstance(reference: any)
+        function InjectInstance(reference: any)
         {
             return new target(reference);
         }
-        return <any>BootScriptInstance;
+        return <any>InjectInstance;
     }
     return f
 }
