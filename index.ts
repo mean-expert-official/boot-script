@@ -6,9 +6,16 @@
  * This decorator will return singleton instances
  * This avoids the need of creating static Injects
  **/
-export function Inject() {
-    function f(target: any)
+export default function Inject(injectionKey : any) {
+    function f(target: any )
     {
+        const targetType : { __inject__? : any } = target.constructor;
+        
+        if (!targetType.hasOwnProperty('__inject__')) {
+            targetType.__inject__ = {};
+        }
+
+        targetType.__inject__ = injectionKey;
         function InjectInstance(reference: any)
         {
             return new target(reference);
