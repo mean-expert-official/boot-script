@@ -1,1 +1,2 @@
-export function BootScript(): any;
+export function Inject(): any;
+export function fireLoopBootstrap(): any;
