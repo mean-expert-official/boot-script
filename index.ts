@@ -17,3 +17,15 @@ export function BootScript() {
     }
     return f
 }
+
+export function BootScriptAsync() {
+    function f(target: any)
+    {
+        function BootScriptInstance(reference: any, cb: Function)
+        {
+            return new target(reference, cb);
+        }
+        return <any>BootScriptInstance;
+    }
+    return f
+}
